@@ -5,12 +5,12 @@ Minimal file uploader - 126 lines of bash that uploads to 5 services with progre
 ## Install
 
 ```bash
-wget -q https://raw.githubusercontent.com/rdndds/termup/main/termup-mini.sh -O ~/termup && chmod +x ~/termup && echo 'alias termup="~/termup"' >> ~/.bashrc && source ~/.bashrc && termup --help
+wget -q https://raw.githubusercontent.com/rdndds/termup/main/termup.sh -O ~/termup && chmod +x ~/termup && echo 'alias termup="~/termup"' >> ~/.bashrc && source ~/.bashrc && termup --help
 ```
 
 **With curl:**
 ```bash
-curl -fsSL https://raw.githubusercontent.com/rdndds/termup/main/termup-mini.sh -o ~/termup && chmod +x ~/termup && echo 'alias termup="~/termup"' >> ~/.bashrc && source ~/.bashrc && termup --help
+curl -fsSL https://raw.githubusercontent.com/rdndds/termup/main/termup.sh -o ~/termup && chmod +x ~/termup && echo 'alias termup="~/termup"' >> ~/.bashrc && source ~/.bashrc && termup --help
 ```
 
 **Zsh users:** Replace `~/.bashrc` with `~/.zshrc`
