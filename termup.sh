@@ -78,8 +78,8 @@ upload_gofile() {
 upload_filebin() {
   local bin="termup-$(date +%s)-$$"
   local tmpfile="/tmp/termup-filebin-$$"
-  curl --progress-bar --data-binary "@$FILE" -H "filename: $FILENAME" -H "bin: $bin" \
-    https://filebin.net/ -o "$tmpfile"
+  curl --progress-bar -T "$FILE" -H "filename: $FILENAME" -H "bin: $bin" \
+    https://filebin.net/$bin/ -o "$tmpfile"
   rm -f "$tmpfile"
   echo "https://filebin.net/$bin"
 }
