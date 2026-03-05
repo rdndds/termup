@@ -1,6 +1,6 @@
 # termup
 
-Minimal file uploader - 126 lines of bash that uploads to 5 services with progress bars.
+Minimal file uploader - 196 lines of bash that uploads to 5 services with progress bars.
 
 ## Install
 
@@ -17,11 +17,19 @@ curl -fsSL https://raw.githubusercontent.com/rdndds/termup/main/termup.sh -o ~/t
 
 ## Usage
 
+**Basic upload (automatic fastest service + pixeldrain):**
 ```bash
 termup myfile.zip
 ```
 
-Output:
+**Select service manually:**
+```bash
+termup --select myfile.zip
+```
+
+### Example Output
+
+**Normal mode:**
 ```
 Uploading: myfile.zip
 
@@ -34,13 +42,36 @@ pixeldrain:
 pixeldrain: https://pixeldrain.com/u/xyz789
 ```
 
+**Select mode:**
+```
+Uploading: myfile.zip
+
+Available services:
+  1) gofile     (342ms) (fastest)
+  2) senditsh   (521ms)
+  3) temp.sh    (687ms)
+  4) filebin    (timeout)
+  *) pixeldrain  (always included)
+
+Select service (1-4, or Enter for fastest): 2
+
+senditsh:
+######################################################################## 100.0%
+senditsh: https://sendit.sh/abc123
+
+pixeldrain:
+######################################################################## 100.0%
+pixeldrain: https://pixeldrain.com/u/xyz789
+```
+
 ## Features
 
-- 126 lines of bash
+- 196 lines of bash
 - Uploads to 5 services: temp.sh, sendit.sh, gofile.io, filebin.net, pixeldrain
 - Smart dual-upload (fastest service + pixeldrain for redundancy)
+- Manual service selection with `--select` flag
 - Real-time progress bars
-- Parallel service probing
+- Parallel service probing with timing display
 - Works without jq (automatic grep fallback)
 - Zero configuration
 
