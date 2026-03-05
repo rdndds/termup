@@ -1,6 +1,6 @@
 # termup-mini Installation Guide
 
-## 🚀 Quick Install (One-Liner)
+## Quick Install (One-Liner)
 
 ### With wget (recommended):
 ```bash

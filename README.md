@@ -1,6 +1,6 @@
 # termup
 
-🚀 Minimal file uploader - 126 lines of bash that uploads to 5 services with progress bars!
+Minimal file uploader - 126 lines of bash that uploads to 5 services with progress bars!
 
 ## Quick Install
 
@@ -10,13 +10,13 @@ wget -q https://raw.githubusercontent.com/rdndds/termup/main/termup-mini.sh -O ~
 
 ## Features
 
-- 📦 **126 lines** (81% smaller than original 678-line script)
-- ⚡ **5 services**: temp.sh, sendit.sh, gofile.io, filebin.net, pixeldrain
-- 🎯 **Smart dual-upload**: Fastest service + Pixeldrain for redundancy
-- 📊 **Progress bars**: Real-time upload progress via curl
-- 🔍 **Parallel probing**: Finds fastest service automatically
-- 🛠️ **Zero config**: Just run `termup yourfile.zip`
-- 🔄 **Works without jq**: Automatic grep fallback
+- **126 lines** (81% smaller than original 678-line script)
+- **5 services**: temp.sh, sendit.sh, gofile.io, filebin.net, pixeldrain
+- **Smart dual-upload**: Fastest service + Pixeldrain for redundancy
+- **Progress bars**: Real-time upload progress via curl
+- **Parallel probing**: Finds fastest service automatically
+- **Zero config**: Just run `termup yourfile.zip`
+- **Works without jq**: Automatic grep fallback
 
 ## Usage
 
@@ -123,4 +123,4 @@ Built on top of the original termup script. Simplified and optimized for speed a
 
 ## Star History
 
-If you find this useful, please star the repo! ⭐
+If you find this useful, please star the repo! 
